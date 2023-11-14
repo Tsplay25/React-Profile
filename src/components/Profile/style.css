@@ -29,3 +29,12 @@
     align-items: center;
     gap: 1rem;
 }
+
+.title {
+    display: flex;
+}
+
+.followButton {
+    padding: .125rem .5rem;
+    margin-left: 1rem;
+}
