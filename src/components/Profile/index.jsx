@@ -1,5 +1,5 @@
 import Button from '../Button';
-import Topic from '../Topic';
+import Topic from './Topic';
 import './style.css';
 
 export default function Profile({
@@ -17,9 +17,15 @@ export default function Profile({
             <img className="avatar" src={avatar} alt={name} />
             <h1>{name}</h1>
             <section className="description">
-                <Topic text={bio} />
-                <Topic text={email} />
-                <Topic text={phone} />
+                <Topic>
+                    {bio}
+                </Topic>
+                <Topic>
+                    {email}
+                </Topic>
+                <Topic>
+                    {phone}
+                </Topic>
             </section>
             <section className="social">
                 <Button link={githubUrl} socialNetwork="Github" />
